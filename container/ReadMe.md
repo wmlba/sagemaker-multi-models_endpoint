@@ -1,6 +1,6 @@
-# Bring-your-own Algorithm Sample
+# Bring-your-own Algorithm Sample (Implement multiple models in the same endpoint)
 
-This example shows how to package an algorithm for use with SageMaker. We have chosen a simple [scikit-learn][skl] implementation of decision trees to illustrate the procedure.
+This example shows how to package an algorithm for use with SageMaker.  This example uses [H2O][h2o] implementation of Autoencoder network to illustrate the procedure.
 
 SageMaker supports two execution modes: _training_ where the algorithm uses input data to train a new model and _serving_ where the algorithm accepts HTTP requests and uses the previously trained model to do an inference (also called "scoring", "prediction", or "transformation").
 
@@ -20,7 +20,7 @@ The components are as follows:
 
 * __build\_and\_push.sh__: The script to build the Docker image (using the Dockerfile above) and push it to the [Amazon EC2 Container Registry (ECR)][ecr] so that it can be deployed to SageMaker. Specify the name of the image as the argument to this script. The script will generate a full name for the repository in your account and your configured AWS region. If this ECR repository doesn't exist, the script will create it.
 
-* __decision-trees__: The directory that contains the application to run in the container. See the next session for details about each of the files.
+* __h2oAutoEncoder__: The directory that contains the application to run in the container. See the next session for details about each of the files.
 
 * __local-test__: A directory containing scripts and a setup for running a simple training and inference jobs locally so that you can test that everything is set up correctly. See below for details.
 
@@ -49,7 +49,7 @@ The subdirectory local-test contains scripts and sample data for testing the bui
 The tree under test-dir is mounted into the container and mimics the directory structure that SageMaker would create for the running container during training or hosting.
 
 * __input/config/hyperparameters.json__: The hyperparameters for the training job.
-* __input/data/training/leaf_train.csv__: The training data.
+* __input/data/training/<folder contains training data>/training-data.csv__: The training data.
 * __model__: The directory where the algorithm writes the model file.
 * __output__: The directory where the algorithm can write its success or failure file.
 
@@ -64,7 +64,7 @@ can be supplied as part of the CreateModel API call.
     timeout                  MODEL_SERVER_TIMEOUT              60 seconds
 
 
-[skl]: http://scikit-learn.org "scikit-learn Home Page"
+[h2o]: https://github.com/h2oai/h2o-3 "H2O Github Page"
 [dockerfile]: https://docs.docker.com/engine/reference/builder/ "The official Dockerfile reference guide"
 [ecr]: https://aws.amazon.com/ecr/ "ECR Home Page"
 [nginx]: http://nginx.org/
