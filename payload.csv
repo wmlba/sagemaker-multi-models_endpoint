@@ -1,0 +1,17 @@
+﻿continue_drop,student_id,gender,caste,mathematics_marks,english_marks,science_marks,science_teacher,languages_teacher,guardian,internet,school_id,total_students,total_toilets,establishment_year
+continue,s19085,M,SC,0.442,0.643,0.442,8,4,father,TRUE,391,161,14,1984
+continue,s19086,M,SC,0.694,0.265,0.694,3,2,mother,TRUE,381,38,14,1904
+continue,s19087,M,SC,0.699,0.353,0.699,3,12,mother,TRUE,319,96,4,1999
+continue,s19088,M,SC,0.511,0.403,0.511,4,5,mother,FALSE,329,275,60,1914
+continue,s19089,M,BC,0.301,0.146,0.301,4,10,mother,TRUE,334,571,61,1924
+continue,s19090,M,SC,0.659,0.347,0.659,8,8,mother,TRUE,360,273,2,1995
+continue,s19091,M,OC,0.226,0.173,0.226,4,5,father,FALSE,361,287,15,1992
+continue,s19092,M,SC,0.551,0.277,0.551,2,10,father,TRUE,323,344,28,1961
+continue,s19093,M,SC,0.437,0.442,0.437,0,3,mother,TRUE,329,275,60,1914
+drop,s19094,M,ST,0.749,1.01,0.749,4,6,father,TRUE,365,444,14,1970
+continue,s19095,M,OC,0.478,0.642,0.478,4,0,father,TRUE,389,299,1,1921
+continue,s19096,M,OC,0.323,0.429,0.323,2,7,mother,TRUE,320,384,28,1909
+continue,s19097,M,BC,0.633,0.885,0.633,6,2,mother,TRUE,378,121,28,1971
+continue,s19098,M,SC,0.337,0.283,0.337,2,6,other,TRUE,378,121,28,1971
+continue,s19099,M,BC,0.344,0.351,0.344,6,0,other,TRUE,374,207,28,1896
+continue,s19100,M,BC,0.183,0.077,0.183,4,6,mother,FALSE,343,353,15,1957

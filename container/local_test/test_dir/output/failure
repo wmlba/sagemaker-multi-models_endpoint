@@ -1,0 +1,11 @@
+Exception during training: Job<$03017f00000132d4ffffffff$_bc08d93caad291b63c11ff9718124350> was cancelled by the user.
+Traceback (most recent call last):
+  File "/opt/program/train", line 86, in train
+    model.train(x=predictors,training_frame=train.hex)
+  File "/usr/local/lib/python2.7/dist-packages/h2o/estimators/estimator_base.py", line 109, in train
+    ignored_columns=ignored_columns, model_id=model_id, verbose=verbose)
+  File "/usr/local/lib/python2.7/dist-packages/h2o/estimators/estimator_base.py", line 249, in _train
+    model.poll(verbose_model_scoring_history=verbose)
+  File "/usr/local/lib/python2.7/dist-packages/h2o/job.py", line 73, in poll
+    raise H2OJobCancelled("Job<%s> was cancelled by the user." % self.job_key)
+H2OJobCancelled: Job<$03017f00000132d4ffffffff$_bc08d93caad291b63c11ff9718124350> was cancelled by the user.
