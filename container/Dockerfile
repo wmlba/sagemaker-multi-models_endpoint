@@ -35,6 +35,6 @@ ENV PYTHONDONTWRITEBYTECODE=TRUE
 ENV PATH="/opt/program:${PATH}"
 
 # Set up the program in the image
-COPY decision_trees /opt/program
+COPY h2oAutoEncoder /opt/program
 WORKDIR /opt/program
 
