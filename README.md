@@ -8,8 +8,10 @@ In this example, I am creating a custom model using H2O Autoencoder estimator to
 
 ### Deploying more than one model to your Endpoint
 
+More information available here:
+https://github.com/aws/sagemaker-python-sdk/blob/master/src/sagemaker/tensorflow/deploying_tensorflow_serving.rst#deploying-more-than-one-model-to-your-endpoint
+
 Deploying more than one model to your Endpoint
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 TensorFlow Serving Endpoints allow you to deploy multiple models to the same Endpoint when you create the endpoint.
 
