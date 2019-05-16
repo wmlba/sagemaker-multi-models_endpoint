@@ -26,7 +26,7 @@ Let's imagine you have already run two Tensorflow training jobs in SageMaker, an
 
 First, download the models and extract them:
 
-` aws s3 cp s3://mybucket/models/model1/model.tar.gz model1.tar.gz
+`aws s3 cp s3://mybucket/models/model1/model.tar.gz model1.tar.gz
 aws s3 cp s3://mybucket/models/model2/model.tar.gz model2.tar.gz
 mkdir -p multi/model1
 mkdir -p multi/model2
